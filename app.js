@@ -1,3 +1,4 @@
+
 const $=id=>document.getElementById(id),money=n=>'৳'+Number(n||0).toLocaleString('en-BD',{maximumFractionDigits:2});
 const bnDate=()=>new Date().toISOString().slice(0,10);
 let orders=JSON.parse(localStorage.orders||'[]'),products=JSON.parse(localStorage.products||'[]'),settings=JSON.parse(localStorage.settings||'{}'),draftItems=[],viewing=null,editingProduct=-1;
